@@ -9,6 +9,7 @@ function App() {
   
   const routes = [
     { path: "/", category: "General" },
+    { path: "/mynews", category: "General" },
     { path: "/General", category: "General" },
     { path: "/business", category: "Business" },
     { path: "/entertainment", category: "Entertainment" },
