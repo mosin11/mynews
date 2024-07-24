@@ -18,7 +18,7 @@ const News = (props) => {
 
     const fetchArticles = async () => {
         try {
-            const response = await fetch('http://localhost:5000/rss'); // Your backend endpoint
+            const response = await fetch('https://mynewss.onrender.com/rss'); // Your backend endpoint
             if (!response.ok) throw new Error('Network response was not ok');
             const data = await response.json();
             setArticles(prevArticles => prevArticles.concat(data)); // Append new articles
